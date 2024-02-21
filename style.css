@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  letter-spacing: 0.15em;
+  --rgb-primary: 87, 58, 255;
+  --rgb-secondary: 222, 106, 85;
+}
+
+.introduction {
+  margin-bottom: 2em;
+}
+
+.introduction .hello,
+.introduction .tags .fa-solid,
+.introduction .tags span {
+  font-style: italic;
+}
+
+.introduction .hello,
+.introduction .tags {
+  font-weight: 100;
+}
+
+.introduction .tags .fa-solid,
+.introduction .tags .line {
+  color: rgba(var(--rgb-primary), 0.7);
+}
+
+.introduction .tags .fa-solid {
+  font-size: 0.8em;
+}
+
+.introduction .name {
+  font-family: liu-jian-mao-cao, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3em;
+  padding: 0.5em 0 0.3em;
+  margin: 0;
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+.row h2 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.row a {
+  display: inline-block;
+  margin: 0 0.25em;
+  padding-left: 0.1em;
+  font-size: 1.25em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social a {
+  color: #eeeeee;
+  background-color: rgba(var(--rgb-primary), .9);
+  border-radius: 0.25em;
+}
+
+.social a:hover {
+  background-color: rgba(var(--rgb-secondary), .9);
+}
+
+.site a {
+  /* font-size: 1.6em; */
+  color: rgba(var(--rgb-primary), .9);
+}
+
+.site a:hover {
+  color: rgba(var(--rgb-secondary), .9);
+}
+
+/* 大屏幕 */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.8vw;
+  }
+}
+
+/* 平板 */
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  body {
+    font-size: 2vw;
+  }
+}
+
+/* 手机 */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* 更小屏 */
+
+@media (max-width: 479px) {
+  body {
+    font-size: 3vw;
+  }
+}
