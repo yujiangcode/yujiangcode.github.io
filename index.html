@@ -75,19 +75,18 @@
       }
 
       /* FIXME: 未使用 */
-      .user-select-none {
+      /* .user-select-none {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-      }
+      } */
 
       body,
-      .social a {
+      .row a {
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
-      .fa-solid,
       .handle-thme {
         transition: color 0.3s ease-in-out;
       }
@@ -160,21 +159,15 @@
         text-decoration: none;
       }
 
-      .social a {
-        color: #eeeeee;
-        background-color: rgba(var(--rgb-primary), 0.9);
-        border-radius: 0.25em;
-      }
-
-      .social a:hover {
-        background-color: rgba(var(--rgb-secondary), 0.9);
-      }
-
-      .site a {
+      .row a {
         color: rgba(var(--rgb-primary), 0.9);
+        /* color: #eeeeee;
+        background-color: rgba(var(--rgb-primary), 0.9);
+        border-radius: 0.25em; */
       }
 
-      .site a:hover {
+      .row a:hover {
+        /* background-color: rgba(var(--rgb-secondary), 0.9); */
         color: rgba(var(--rgb-secondary), 0.9);
       }
 
@@ -195,7 +188,7 @@
 
       @media (min-width: 1024px) {
         body {
-          font-size: 1.8vw;
+          font-size: 1.5vw;
         }
       }
 
@@ -219,7 +212,7 @@
 
       @media (max-width: 479px) {
         body {
-          font-size: 3vw;
+          font-size: 2.5vw;
         }
       }
     </style>
@@ -242,15 +235,6 @@
       <h2>关于我</h2>
       <div class="social">
         <a
-          href="https://space.bilibili.com/400815687"
-          target="_blank"
-          title="Bilibili"
-          aria-label="我的B站"
-        >
-          <i class="fa-brands fa-bilibili"></i>
-        </a>
-
-        <a
           href="https://github.com/YujiangZhang"
           target="_blank"
           title="GitHub"
@@ -258,18 +242,15 @@
         >
           <i class="fa-brands fa-github"></i>
         </a>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="site">
-        <a
+        <!-- <a
           href="https://yustudy.cn"
           target="_blank"
           title="博客"
           aria-label="我的博客"
           ><i class="fa-solid fa-book"></i
-        ></a>
+        ></a> -->
+
         <a
           href="mailto:lingyou.ly@outlook.com"
           title="邮件"
