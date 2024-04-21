@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="我是张玉江，现居上海，2018年获得管理学学位，在后端部门做过前端开发的工作，正在寻找工作。"
-    />
+    <meta name="description" content="欢迎访问，我是张玉江。" />
     <title>张玉江</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script>
@@ -50,10 +47,7 @@
         "@type": "Person",
         "name": "张玉江",
         "url": "https://zhangyujiang.cn",
-        "sameAs": [
-          "https://github.com/YujiangZhang",
-          "https://space.bilibili.com/400815687"
-        ]
+        "sameAs": ["https://github.com/YujiangZhang", "https://jadezhang.cn/"]
       }
     </script>
 
@@ -65,30 +59,29 @@
         --bg: #fff;
         --rgb-primary: 87, 58, 255;
         --rgb-secondary: 222, 106, 85;
+        --transition: 0.2s ease-in-out;
       }
 
       [theme="dark"] {
         --color: #eee;
         --bg: #333;
         --rgb-primary: 152, 147, 247;
-        --rgb-secondary: 222, 106, 85;
       }
 
-      /* FIXME: 未使用 */
-      /* .user-select-none {
+      .select-none {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-      } */
+      }
 
       body,
-      .row a {
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      .about-me a {
+        transition: background-color var(--transition), color var(--transition);
       }
 
       .handle-thme {
-        transition: color 0.3s ease-in-out;
+        transition: color var(--transition);
       }
 
       body {
@@ -139,35 +132,27 @@
         margin: 0;
       }
 
-      .row {
-        margin-bottom: 1em;
-      }
-
-      .row h2 {
+      .about-me h2 {
         font-size: 1em;
         font-weight: 600;
+        margin-bottom: 1.5em;
       }
 
-      .row a {
+      /* 链接 */
+      .about-me a {
         display: inline-block;
-        margin: 0 0.25em;
-        padding-left: 0.1em;
-        font-size: 1.25em;
-        width: 1.5em;
-        height: 1.5em;
-        line-height: 1.5em;
-        text-decoration: none;
+        margin: 0 0.8em;
       }
 
-      .row a {
+      .about-me i {
+        font-size: 2em;
+      }
+
+      .about-me a {
         color: rgba(var(--rgb-primary), 0.9);
-        /* color: #eeeeee;
-        background-color: rgba(var(--rgb-primary), 0.9);
-        border-radius: 0.25em; */
       }
 
-      .row a:hover {
-        /* background-color: rgba(var(--rgb-secondary), 0.9); */
+      .about-me a:hover {
         color: rgba(var(--rgb-secondary), 0.9);
       }
 
@@ -195,7 +180,7 @@
       /* 平板 */
 
       @media (max-width: 1023px) and (min-width: 768px) {
-        body {
+        :root {
           font-size: 2vw;
         }
       }
@@ -203,7 +188,7 @@
       /* 手机 */
 
       @media (max-width: 767px) {
-        body {
+        :root {
           font-size: 14px;
         }
       }
@@ -211,7 +196,7 @@
       /* 小屏 */
 
       @media (max-width: 479px) {
-        body {
+        :root {
           font-size: 2.5vw;
         }
       }
@@ -219,8 +204,9 @@
   </head>
 
   <body>
-    <div class="introduction">
-      <div class="hello">
+    <section class="introduction">
+      <!-- <h2>介绍</h2> -->
+      <div class="hello select-none">
         欢迎<span class="handle-thme" onclick="toggleTheme()">,</span>我是
       </div>
       <h1 class="name">张玉江</h1>
@@ -229,11 +215,11 @@
         <span class="line"> &ensp;|&ensp; </span>
         <span><i class="fa-solid fa-code"></i>&ensp;前端开发</span>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
+    <section class="about-me">
       <h2>关于我</h2>
-      <div class="social">
+      <div class="social select-none">
         <a
           href="https://github.com/YujiangZhang"
           target="_blank"
@@ -243,22 +229,22 @@
           <i class="fa-brands fa-github"></i>
         </a>
 
-        <!-- <a
-          href="https://yustudy.cn"
+        <a
+          href="https://jadezhang.cn/"
           target="_blank"
           title="博客"
           aria-label="我的博客"
-          ><i class="fa-solid fa-book"></i
-        ></a> -->
+          ><i class="fa-solid fa-blog"></i
+        ></a>
 
         <a
           href="mailto:lingyou.ly@outlook.com"
-          title="邮件"
+          title="邮箱"
           aria-label="给我发邮件"
           ><i class="fa-solid fa-envelope"></i
         ></a>
       </div>
-    </div>
+    </section>
     <script>
       // 根据当前时间自动切换主题
 
