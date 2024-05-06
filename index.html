@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="欢迎访问，我是张玉江。" />
-    <title>张玉江</title>
+    <meta
+      name="description"
+      content="张玉江（Jade Zhang）是一名程序员，欢迎访问我的主页。"
+    />
+    <meta name="keywords" content="张玉江, Jade Zhang" />
+    <title>张玉江（Jade Zhang）</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script>
       (function (d) {
@@ -46,7 +50,9 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "张玉江",
+        "alternateName": "Jade Zhang",
         "url": "https://zhangyujiang.cn",
+        "description": "我是张玉江，一名前端技术爱好者。欢迎访问我的个人网站。",
         "sameAs": ["https://github.com/zyj-dev", "https://jadezhang.cn/"]
       }
     </script>
@@ -139,9 +145,10 @@
       }
 
       /* 链接 */
+
       .about-me a {
         display: inline-block;
-        margin: 0 0.8em;
+        margin: 0 1.75em;
       }
 
       .about-me i {
@@ -219,7 +226,7 @@
 
     <section class="about-me">
       <h2>关于我</h2>
-      <div class="social select-none">
+      <div class="select-none">
         <a
           href="https://github.com/zyj-dev"
           target="_blank"
@@ -247,7 +254,6 @@
     </section>
     <script>
       // 根据当前时间自动切换主题
-
       (function () {
         var now = new Date();
         var hour = now.getHours();
